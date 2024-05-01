@@ -19,7 +19,7 @@ const AddCoffee = () => {
         console.log(toAddCoffeeData)
 
 
-        fetch("http://localhost:5000/coffee", {
+        fetch("https://coffee-store-server-nur-mps-projects.vercel.app/coffee", {
             method: "POST",
             headers: {
                 "content-type": "application/json"
@@ -44,7 +44,8 @@ const AddCoffee = () => {
 
     return (
         <div>
-            <h3>The add coffee components</h3>
+            <h3 className="text-4xl text-center p-10 mt-10"
+            >The add coffee components</h3>
             <div className="w-full">
                 <form onSubmit={handleAddCoffeeForm} className="card-body">
                     <div className="shadow-2xl p-7">

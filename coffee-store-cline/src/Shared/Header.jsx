@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
@@ -13,7 +13,6 @@ const Header = () => {
                         <li><NavLink to={'/'}>Home</NavLink></li>
                         <li><NavLink to={'/updatecoffee'}>Update</NavLink></li>
                         <li><NavLink to={'/addcoffee'}>Add COffee</NavLink></li>
-
                         </ul>
                     </div>
                     <a className="btn btn-ghost text-xl">daisyUI</a>
@@ -24,10 +23,12 @@ const Header = () => {
                     <ul className="menu menu-horizontal px-1">
                         <li><NavLink to={'/'}>Home</NavLink></li>
                         <li><NavLink to={'/addcoffee'}>Add COffee</NavLink></li>
+                        <li><NavLink to={'/allusers'}>Users</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                    <Link to="/singin"><button className="btn mr-5">Login</button></Link>
+                    <Link to="/singup"><button className="btn">Register</button></Link>
                 </div>
             </div>
         </div>
